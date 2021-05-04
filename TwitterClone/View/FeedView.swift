@@ -11,7 +11,12 @@ struct FeedView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             ScrollView {
-                
+                VStack {
+                    ForEach(0..<100) { _ in
+                        TweetCell()
+                    }
+                }
+                .padding()
             }
             
             Button(action: {}, label: {
@@ -24,6 +29,7 @@ struct FeedView: View {
             .background(Color.blue)
             .foregroundColor(.white)
             .clipShape(Circle())
+            .shadow(color: .secondary, radius: 3, x: 0, y: 1)
             .padding()
         }
     }
