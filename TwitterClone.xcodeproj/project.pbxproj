@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC2D7C1C2640E54F00FB8F3D /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2D7C1B2640E54F00FB8F3D /* FeedView.swift */; };
 		ECF6579C263D492D00EA1556 /* TwitterCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6579B263D492D00EA1556 /* TwitterCloneApp.swift */; };
 		ECF6579E263D492D00EA1556 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6579D263D492D00EA1556 /* ContentView.swift */; };
 		ECF657A0263D493000EA1556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF6579F263D493000EA1556 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC2D7C1B2640E54F00FB8F3D /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		ECF65798263D492D00EA1556 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF6579B263D492D00EA1556 /* TwitterCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneApp.swift; sourceTree = "<group>"; };
 		ECF6579D263D492D00EA1556 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC2D7C182640E4E200FB8F3D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EC2D7C192640E50100FB8F3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECF6579D263D492D00EA1556 /* ContentView.swift */,
+				EC2D7C1B2640E54F00FB8F3D /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC2D7C1A2640E51100FB8F3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ECF6578F263D492D00EA1556 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +77,10 @@
 		ECF6579A263D492D00EA1556 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				EC2D7C1A2640E51100FB8F3D /* Model */,
+				EC2D7C192640E50100FB8F3D /* View */,
+				EC2D7C182640E4E200FB8F3D /* ViewModels */,
 				ECF6579B263D492D00EA1556 /* TwitterCloneApp.swift */,
-				ECF6579D263D492D00EA1556 /* ContentView.swift */,
 				ECF6579F263D493000EA1556 /* Assets.xcassets */,
 				ECF657A4263D493000EA1556 /* Info.plist */,
 				ECF657A1263D493000EA1556 /* Preview Content */,
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF6579E263D492D00EA1556 /* ContentView.swift in Sources */,
+				EC2D7C1C2640E54F00FB8F3D /* FeedView.swift in Sources */,
 				ECF6579C263D492D00EA1556 /* TwitterCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
