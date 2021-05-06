@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            
             TabView {
                 FeedView()
                     .tabItem {
@@ -18,7 +17,7 @@ struct ContentView: View {
                         Text("Home")
                     }
                 
-                Text("Search")
+                SearchView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Search")
